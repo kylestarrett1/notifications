@@ -2,142 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./css/general.css">
   <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" href="./css/queries.css">
 
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  
-  <title>Frontend Mentor | Notifications page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  
+  <title>Notifications</title>
 </head>
 <body>
 
-  <main class="main-container">
+  <main class="main">
 
-    <section class="overlay">
-
-      <section class="section-notifications">
-
-        <div class="notifications container"> 
-
-          <div class="notifications-header margin-bottom-md">
-              <div class="notifications--text--count">
-                <h2 class="header header--primary">Notifications
-                </h2>
-                <p class="notifications-count">3</p>
-              </div>
-              <p class="mark-as-read">Mark all as read</p>
+    <section class="section-notifications">
+        <div class="notifications-container">
+          
+          <div class="notifications-header container">
+            <h1 class="header">Notifications </h1>
+            <p class="notification-count">3</p>
+            <p class="mark-all-as-read">Mark all as read</p>
           </div>
 
-          <div class="notification">
+          <div class="notification container">
+            <img class="profile-img" src="./assets/images/avatar-mark-webber.webp" alt="Profile picture of Mark Webber">
+            <p class="user-name">Mark Webber</p>
+            <p class="notification-text">reacted to your recent post</p>
+            <p class="post-text">My first tournament today!</p>
+            <div class="new-notification-icon"></div>
 
-            <div class="profile-user">
-                <img class="user-img" src="./assets/images/avatar-mark-webber.webp" alt="Mark Weber profile image">
-              
-                <div class="user-name-container">
-                  <p class="user-name">Mark Webber</p>
-                  <span class="time-posted">1m ago</span>
-                </div>
-            </div>
-
-            <div class="notification-body">
-              <p class="notification-text">reacted to your recent post</p>
-              <p class="post">My first tournament today!</p>
-              <p class="new-icon"></p>
-            </div>
-
-          </div>
-
-          <div class="notification">
-
-            <div class="profile-user">
-                <img class="user-img" src="./assets/images/avatar-angela-gray.webp" alt="Angela Gray profile image">
-              
-                <div class="user-name-container">
-                  <p class="user-name">Angela Gray</p>
-                  <span class="time-posted">5m ago</span>
-                </div>
-            </div>
-
-            <div class="notification-body">
-              <p class="notification-text">followed you</p>
-              <p class="new-icon"></p>
-            </div>
-            
-          </div>
-
-          <div class="notification">
-
-            <div class="profile-user">
-                <img class="user-img" src="./assets/images/avatar-jacob-thompson.webp" alt="Jacob Thompson profile image">
-              
-                <div class="user-name-container">
-                  <p class="user-name">Jacob Thompson</p>
-                  <span class="time-posted">1 day ago</span>
-                </div>
-            </div>
-
-            <div class="notification-body">
-              <p class="notification-text">has joined your group <span class="group-name">Chess Club</span></p>
-              <p class="new-icon"></p>
-            </div>
-            
           </div>
 
         </div>
-
-      </section>
-  
     </section>
-
+    
   </main>
 
-
-  <!-- Notifications 3
-
-  Mark all as read
-
-  Mark Webber reacted to your recent post My first tournament today!
-  1m ago
-
-  Angela Gray followed you
-  5m ago
-
-  Jacob Thompson has joined your group Chess Club
-  1 day ago
-
-  Rizky Hasanuddin sent you a private message
-  5 days ago
-  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
-  I'm already having lots of fun and improving my game.
-
-  Kimberly Smith commented on your picture
-  1 week ago
-
-  Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
-  2 weeks ago
-
-  Anna Kim left the group Chess Club
-  2 weeks ago -->
-  
-
-  <!-- <footer>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Kyle Starrett</a>.
-    </div>
-  </footer> -->
-  
 </body>
 </html>
