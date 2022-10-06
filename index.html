@@ -1,44 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="./css/general.css">
-  <link rel="stylesheet" href="./css/styles.css">
-
-  <title>Notifications</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/queries.css">
+    <title>Notification Layout</title>
 </head>
 <body>
+    <main class="main grid">
+        <div class="notification-container">
 
-  <main class="main">
+            <!---------------------------------------------------------->
+            <!-- HEADER -->
+            <!---------------------------------------------------------->
 
-    <section class="section-notifications">
-        <div class="notifications-container">
-          
-          <div class="notifications-header container">
-            <h1 class="header">Notifications </h1>
-            <p class="notification-count">3</p>
-            <p class="mark-all-as-read">Mark all as read</p>
-          </div>
+            <div class="notification-header">
+                <h2 class="header-primary">Notifications</h2>
+                <p class="unread-count">3</p>
+                <p class="mark-all-as-read">Mark all as read</p>
+            </div>
 
-          <div class="notification container">
-            <img class="profile-img" src="./assets/images/avatar-mark-webber.webp" alt="Profile picture of Mark Webber">
-            <p class="user-name">Mark Webber</p>
-            <p class="notification-text">reacted to your recent post</p>
-            <p class="post-text">My first tournament today!</p>
-            <div class="new-notification-icon"></div>
+            <!---------------------------------------------------------->
+            <!-- MARK WEBBER -->
+            <!---------------------------------------------------------->
 
-          </div>
+            <div class="notification add-grey-background">
+                <div class="img-container">
+                    <img class="profile-img" src="./assets/images/avatar-mark-webber.webp" alt="Mark Webber profile pic">
+                </div>
+                <div class="notification-body">
+                    <p class="user-name">Mark Webber</p>
+                    <p class="notification-text">reacted to your recent post</p>
+                    <p class="post-text">My first tournament today!</p>
+                    <p class="unread-icon"></p>
+                </div>
+                <div class="time-stamp">
+                    <p class="time-stamp-text">1m ago</p>
+                </div>
+            </div>
+
+            <!---------------------------------------------------------->
+            <!-- ANGELA GRAY -->
+            <!---------------------------------------------------------->
+
+            <div class="notification add-grey-background">
+                <div class="img-container">
+                    <img class="profile-img" src="./assets/images/avatar-angela-gray.webp" alt="Angela Gray profile pic">
+                </div>
+                <div class="notification-body">
+                    <p class="user-name">Angela Gray</p>
+                    <p class="notification-text">followed you</p>
+                    <p class="unread-icon"></p>
+
+                </div>
+                <div class="time-stamp">
+                    <p class="time-stamp-text">5m ago</p>
+                </div>
+            </div>
+
+            <!---------------------------------------------------------->
+            <!-- JACOB THOMPSON -->
+            <!---------------------------------------------------------->
+
+            <div class="notification add-grey-background">
+                <div class="img-container">
+                    <img class="profile-img" src="./assets/images/avatar-jacob-thompson.webp" alt="Jacob Thompson profile pic">
+                </div>
+                <div class="notification-body">
+                    <p class="user-name">Jacob Thompson</p>
+                    <p class="notification-text">has joined your group</p>
+                    <p class="group-text">Chess Club</p>
+                    <p class="unread-icon"></p>
+                </div>
+                <div class="time-stamp">
+                    <p class="time-stamp-text">1 day ago</p>
+                </div>
+            </div>
+
+            <!---------------------------------------------------------->
+            <!-- Rizky Hasanuddin -->
+            <!---------------------------------------------------------->
+
+            <div class="notification grid--resize">
+                <div class="img-container">
+                    <img class="profile-img" src="./assets/images/avatar-rizky-hasanuddin.webp" alt="Rizky Hasanuddin profile pic">
+                </div>
+                <div class="notification-body">
+                    <p class="user-name">Rizky Hasanuddin</p>
+                    <p class="notification-text">sent you a private message</p>
+                </div>
+                <div class="time-stamp">
+                    <p class="time-stamp-text">5 days ago</p>
+                </div>
+
+                <div class="message-box">
+                    <p class="message-text">
+                        Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm having lots of fun and improving my game.
+                    </p>
+                </div>
+
+            </div>
+
+            <!---------------------------------------------------------->
+            <!-- Kimberly Smith -->
+            <!---------------------------------------------------------->
+
+            <div class="notification">
+                <div class="img-container">
+                    <img class="profile-img" src="./assets/images/avatar-kimberly-smith.webp" alt="Kimberly Smith profile pic">
+                </div>
+                <div class="notification-body">
+                    <p class="user-name">Kimberly Smith</p>
+                    <p class="notification-text">commented on your picture</p>
+                </div>
+                
+                <img class="commented-img" src="./assets/images/image-chess.webp" alt="Girls ponders next move in chess match">
+
+                <div class="time-stamp">
+                    <p class="time-stamp-text">1 week ago</p>
+                </div>
+            </div>
+
+            <!---------------------------------------------------------->
+            <!-- Nathan Peterson -->
+            <!---------------------------------------------------------->
+
+            <div class="notification">
+                <div class="img-container">
+                    <img class="profile-img" src="./assets/images/avatar-nathan-peterson.webp" alt="Nathan Peterson profile pic">
+                </div>
+                <div class="notification-body">
+                    <p class="user-name">Nathan Peterson</p>
+                    <p class="notification-text">reacted to your recent post</p>
+                    <p class="post-text">5 end-game strategies to increase your win rate</p>
+                </div>
+                <div class="time-stamp">
+                    <p class="time-stamp-text">2 weeks ago</p>
+                </div>
+            </div>
+
+            <!---------------------------------------------------------->
+            <!-- Anna Kim -->
+            <!---------------------------------------------------------->
+
+            <div class="notification">
+                <div class="img-container">
+                    <img class="profile-img" src="./assets/images/avatar-anna-kim.webp" alt="Anna Kim profile pic">
+                </div>
+                <div class="notification-body">
+                    <p class="user-name">Anna Kim</p>
+                    <p class="notification-text">left the group</p>
+                    <p class="group-text">Chess Club</p>
+                </div>
+                <div class="time-stamp">
+                    <p class="time-stamp-text">2 weeks ago</p>
+                </div>
+            </div>
 
         </div>
-    </section>
+    </main>
     
-  </main>
-
 </body>
 </html>

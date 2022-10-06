@@ -1,0 +1,51 @@
+/* rem and em do NOT depend on html font-size in media queries
+Instead, 1rem = 1em = 16px */
+
+/***************************************************/
+/* BELOW 550px */
+/***************************************************/
+
+@media (max-width: 34em) {
+    .commented-img {
+        margin-right: 1rem;
+    }
+
+    .message-box {
+        margin-right: 1rem;
+    }
+}
+
+/***************************************************/
+/* BELOW 390 (Phones) */
+/***************************************************/
+
+@media (max-width: 24em) {
+    .notification-container {
+        padding: 2rem 1.4rem;
+        height: auto;
+    }
+
+    .notification-header {
+        margin-bottom: 1.8rem;
+    }
+
+    .notification {
+        height: auto;
+    }
+
+    .commented-img { 
+        margin-right: 0.5rem;
+    }
+
+
+    .grid--resize {
+        height: auto;
+        margin-bottom: auto;
+    }
+
+    .message-box {
+        padding: 1.6rem 1.2rem;
+        margin-right: 0.5rem;
+        line-height: 1.3;
+    }
+}

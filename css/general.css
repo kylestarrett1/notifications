@@ -1,32 +1,69 @@
 /* 
 
--- COLORS : 
+-- FONT SIZES 
 
--Primary : 
-#023076
+8 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 32 / 40 / 44 / 52 / 64 / 72 / 86 / 98
 
--Greys : 
+
+-- COLORS
+
+- Primary : 
+#09327b
+#ff4f48
+
+- Tints
+
+#224788
+#7c8288
+#e5eff9
+#e8f1fa
+
+- Shades
+
+#70757a
+#63686d
+
+- Greys
+
+#0d0d16
+#f6fafd
 #f9fafe
+#444c55
+#777
+#888
 
 
+-- LINE HEIGHTS 
+
+- Medium : 1.3, 1.5
+
+-- LETTER SPACING 
+
+- Small : 0.25px
 
 
+-- BORDER RADIUS 
+
+- Small : 5px
+
+- Medium : 7px, 9px
+
+- Large : 11px
 
 
+-- SPACING SYSTEM 
 
---BORDER-RADIUS: 
-
--Small : 5px
-
--Medium : 11px
-
+2.5 / 5 / 7.5 / 11.5 / 15 / 18.5 / 24 / 30 / 32 / 40 / 44 / 64 / 72 / 86 / 98 / 108
 
 */
 
-* {
+
+*,
+*::after, 
+*::before {
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 html {
@@ -35,18 +72,29 @@ html {
 
 body {
     font-family: "Plus Jakarta Sans", sans-serif;
-    line-height: 1;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #222;
 }
 
-/*************************************************/
-/* GENERAL REUSABLE COMPONENTS */
-/*************************************************/
+/***********************************************************************/
+/* REUSABLE COMPONENTS */
+/***********************************************************************/
 
-.container {
-    /* 816px */
-    max-width: 81.6rem;
+.grid {
+    display: grid;
+    place-items: center;
+}
+
+/* .container {
+    max-width: 68rem;
     margin: 0 auto;
-    padding: 3.2rem;
+} */
+
+.grid--gap {
+    row-gap: 1rem;
+}
+
+.add-grey-background {
+    background-color: #f6fafd !important;
 }
